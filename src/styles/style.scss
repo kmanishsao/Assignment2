@@ -1,0 +1,225 @@
+$bg-color: #EDF2F2;
+$color: #fff;
+$background-color:#337ab7;
+$border-color: #2e6da4;
+$breadcrumBgColor:white;
+$breadcrumTxtColor: #0275d8;
+@mixin bgColor {
+    background-color: $breadcrumBgColor;
+}
+
+body {
+    width: 100%;
+    flex-flow: column;
+    font-size: 14px;
+    font-family: "Fira Sans,Helvetica,Arial,sans-serif";
+}
+
+
+.HeaderTop {
+    display: flex;
+    margin: auto;
+}
+
+.logo {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #58585b;
+    height:auto;
+    width:100%;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  
+}
+
+
+footer {
+    h4 {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+
+footer{ ul {
+    list-style-type: none;
+    color: #f8f8f8;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+        }
+
+
+
+ul li a {
+    background-color: transparent;
+    color: #f8f8f8;
+}
+
+
+paddingtop-bottom {
+    padding: 15px 0 0 0;
+}
+
+.display-4 {
+    justify-content: center;
+    text-align: center;
+}
+
+#researchers {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    flex-basis: auto;
+    justify-content: center;
+}
+
+.researchSummary {
+    padding: 0 20px 20px 0;
+    margin: 0 20px 20px 0;
+    width: 18rem;
+}
+
+#Institutemission {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#message {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.headercss {
+    width: 50vw;
+}
+
+.searchBox {
+    text-align: right;
+    width: 50vw;
+    justify-content: end;
+}
+
+.heroContent {
+    border: 0px grey solid;
+    width: 98vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+
+.heroimage {
+    width: 100%;
+}
+
+
+
+    .researchCard {
+        background: $bg-color;
+    }
+
+    .btn-primary {
+        color: $color;
+        background-color: $background-color;
+        border-color: $border-color;
+    }
+
+    ol.breadcrumb {
+        padding: 10px 16px;
+        list-style: none;
+        @include bgColor;
+    }
+
+    ol.breadcrumb li a {
+        color: $breadcrumTxtColor;
+    }
+
+.card-body p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-box-orient: vertical;
+}
+
+@media screen and (max-width:320px) {
+
+    .searchBox{
+        display:none;
+    }
+
+    .researchSummary {
+        padding: 0 0 0 10px;
+        margin: 10px;
+    }
+    #researchers {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .carousel-item  img {
+    height:40vh;
+    }   
+}
+
+
+
+@media screen and (max-width:425px) {
+
+       .carousel-item img {
+        height: 40vh;
+    }
+}
+
+
+    @media screen and (max-width:760px) {
+        .HeaderTop {
+            display: block;
+            margin: auto;
+        }
+ 
+
+        .headercss {
+            width: 100vw;
+        }
+
+        .searchBox {
+            width: 100%;
+        }
+
+        #researchers {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .researchSummary {
+            padding: 0 0 0 10px;
+            margin: 10px;
+            width: 95%;
+        }
+        .heroContent {
+            border: 0px grey solid;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+    }
+
